@@ -1,0 +1,69 @@
+/*Styles for Crystals game*/
+
+
+body {
+    background-image: url("../images/bg_purple_fade.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pageControl {
+  /*background-color: #c0c5c5;*/
+
+}
+
+
+.instructionList {
+  padding: 0px;
+}
+
+.imgCrystal {
+  width: 200px;
+  height: 150px;
+
+}
+
+.dataClass {
+  margin-bottom: 30px;
+
+}
+
+.numberHead,
+.computerNo,
+.userTotal
+ {
+  background-color: #9c9c9c;
+  height: 30px;
+  color: #483D8B;
+  font-weight: bold;
+}
+
+.numberHead {  
+  height: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.computerNo,
+.userTotal 
+{  
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+
+}
+
+
+.numberBlock {
+  background-color: #9c9c9c;
+  color: #483D8B;
+  font-weight: bold;
+  height: 40px;
+  padding: 10px 0px;
+  text-align: left;
+}
+
+.totalLosses {
+  
+}
+

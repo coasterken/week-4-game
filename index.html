@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Crystal Collector Game</title>
+
+  <meta charset="utf-8">
+
+  <!-- Viewport - for management of various device sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Style Sheets -->
+  <!-- Bootstrap style sheet - verify current version -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Personal style sheet - change location  -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <!-- Link jquery here -->
+  <!-- uncompressed -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+ <!-- Link javascript -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+<body>
+  
+<!--  Bootstrap Grid  -->
+<div class="container-fluid text-center">    
+  <div class="row">
+    <div class="col-md-12 pageControl"> 
+      <h1>Crystal Collector!</h1>
+    </div>
+  </div>  <!-- End of Row -->
+  <div class="row">
+    <div class="col-md-2" >
+      <!-- Nothing Here -->  
+    </div>
+    <div class="col-md-4 text-left" > 
+        <h3>Instructions:</h3>  
+        <ul class="instructionList">
+          <li>You will be given a random number at the beginning of each game</li>
+          <li>There are 4 C(K)rystals below.  Clicking on a Crystal will add a specific amount of points to your score</li>
+          <li>You win the game by matching your total score to the random number.</li>
+        </ul>
+    </div>
+    <div class="col-md-4 text-left" > 
+        <h3><br></h3>  
+        <ul class="instructionList">
+          <li>You lose the game if your total score goes above the random number.</li>
+          <li>The value of each Crystal is hidden from you until you click on it.</li>
+          <li>Crystal values will change with each game</li>
+        </ul>
+    </div>
+    <div class="col-md-2" >
+      <!-- Nothing Here -->  
+    </div>
+  </div>  <!-- End of Row -->
+</div>
+
+<div class="row dataClass">
+  <div class="col-md-2" >
+     <!-- Nothing Here -->
+  </div>
+  <div class="col-md-2 " >
+    <img id="crystal-1" src="assets/images/cg.jpg" class="img-responsive imgCrystal" >
+  </div>
+  <div class="col-md-2 " >
+    <img id="crystal-2" src="assets/images/kc2.jpg" class="img-responsive imgCrystal" >
+  </div>
+  <div class="col-md-2 " >
+    <img id="crystal-3" src="assets/images/ca.jpg" class="img-responsive imgCrystal" >
+  </div>
+  <div class="col-md-2 " >
+    <img id="crystal-4" src="assets/images/krystal.jpg" class="img-responsive imgCrystal" >
+  </div>
+  <div class="col-md-2" >
+     <!-- Nothing Here -->   
+  </div>
+</div>
+
+<!-- Totals Section -->
+<div class="row">
+  <div class="col-md-3" >
+     <!-- Nothing Here -->
+  </div>
+  <div class="col-md-2 " >
+    <p class="numberHead">Random Number</p>
+    <p class="computerNo"> </p>
+
+  </div>
+  <div class="col-md-2 " >
+    <p class="numberHead">Your total score</p>
+    <p class="userTotal"> </p>
+
+  </div>
+  <div class="col-md-2 " >
+    <div class="row">
+      <div class="col-md-12">
+       <p class="numberBlock">Total Wins: <span class="totalWins"></span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="numberBlock">Total Losses: <span class="totalLosses"></span> </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3" >
+     <!-- Nothing Here -->   
+  </div>
+</div>
+
+<!-- Bootstrap Footer  -->
+<!-- <footer class="container-fluid text-center pageControl">
+  <div >&copy; Copyright 2017 Ken Thompson </div>
+</footer>
+ -->
+</body>
+</html>
