@@ -15,6 +15,7 @@ body {
 
 .instructionList {
   padding: 0px;
+  margin-top: 20px;
 }
 
 .imgCrystal {
@@ -59,7 +60,7 @@ body {
   color: #483D8B;
   font-weight: bold;
   height: 40px;
-  padding: 10px 0px;
+  padding: 10px 0px 0px 5px;
   text-align: left;
 }
 
