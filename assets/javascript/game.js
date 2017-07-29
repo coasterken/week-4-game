@@ -24,7 +24,7 @@ function loadFunction() {
 
   for (var i = 1; i < 5; i++) {   
     $("#crystal-" + i).data("crystalRandomNo", (Math.floor(Math.random() * 12) + 1));
-    //console.log([i] + " " + $("#crystal-" + i).data("crystalRandomNo"));
+    console.log([i] + " " + $("#crystal-" + i).data("crystalRandomNo"));
   }
 
   //get the random number to be matched
@@ -38,12 +38,14 @@ function loadFunction() {
   $(".imgCrystal").on("click", function() {
 
     userTotal = userTotal + $(this).data("crystalRandomNo");
+
     $(".userTotal").html(userTotal);
-    if (userTotal === randomMatchNo) {
+
+    if (userTotal === randomMatchNo) {   //winner
       totalWins++;
       $(".totalWins").html(totalWins);
       loadFunction();
-    } else if (userTotal > randomMatchNo)  {
+    } else if (userTotal > randomMatchNo)  {  //loser
       totalLosses++;
       $(".totalLosses").html(totalLosses);
       loadFunction();
